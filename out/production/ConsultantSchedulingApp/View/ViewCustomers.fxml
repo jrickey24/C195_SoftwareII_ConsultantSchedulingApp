@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.Label?>
+<AnchorPane maxHeight="600.0" maxWidth="1200.0" minHeight="600.0" minWidth="1200.0" opacity="0.8" prefHeight="600.0" prefWidth="1200.0" styleClass="bodybg" stylesheets="@../Utils/BackgroundMain.CSS" xmlns="http://javafx.com/javafx/1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ViewCustomers">
+   <children>
+      <TableView fx:id="customerTableView" layoutX="53.0" layoutY="68.0" opacity="0.6" prefHeight="478.0" prefWidth="1129.0">
+          <columns>
+              <TableColumn fx:id="customerIdColumn" prefWidth="45.0" text="ID">
+                  <cellValueFactory>
+                      <PropertyValueFactory property="customerId" />
+                  </cellValueFactory>
+              </TableColumn>
+              <TableColumn fx:id="nameColumn" prefWidth="180.0" text="Name">
+                  <cellValueFactory>
+                      <PropertyValueFactory property="name" />
+                  </cellValueFactory>
+              </TableColumn>
+              <TableColumn fx:id="addressColumn" prefWidth="260.0" text="Address">
+                  <cellValueFactory>
+                      <PropertyValueFactory property="address" />
+                  </cellValueFactory>
+              </TableColumn>
+              <TableColumn fx:id="postalCodeColumn" prefWidth="75.0" text="Postal/Zip">
+                  <cellValueFactory>
+                      <PropertyValueFactory property="postalCode" />
+                  </cellValueFactory>
+              </TableColumn>
+              <TableColumn fx:id="phoneColumn" prefWidth="120.0" text="Phone Number">
+                  <cellValueFactory>
+                      <PropertyValueFactory property="phone" />
+                  </cellValueFactory>
+              </TableColumn>
+              <TableColumn fx:id="divisionIdColumn" prefWidth="85.0" text="Division ID">
+                  <cellValueFactory>
+                      <PropertyValueFactory property="divisionId" />
+                  </cellValueFactory>
+              </TableColumn>
+              <TableColumn fx:id="divisionNameColumn" prefWidth="150.0" text="Division">
+                  <cellValueFactory>
+                      <PropertyValueFactory property="divisionName" />
+                  </cellValueFactory>
+              </TableColumn>
+              <TableColumn fx:id="countryNameColumn" prefWidth="60.0" text="Country">
+                  <cellValueFactory>
+                      <PropertyValueFactory property="countryName" />
+                  </cellValueFactory>
+              </TableColumn>
+          </columns>
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </TableView>
+      <Button fx:id="modifyButton" layoutX="1104.0" layoutY="553.0" mnemonicParsing="false" onAction="#handleModifyButton" text="Modify" textFill="#185296">
+         <font>
+            <Font name="Segoe UI Semibold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="deleteButton" layoutX="1015.0" layoutY="553.0" mnemonicParsing="false" onAction="#handleDeleteButton" text="Delete" textFill="#185296">
+         <font>
+            <Font name="Segoe UI Semibold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="homeButton" layoutX="1108.0" layoutY="21.0" mnemonicParsing="false" onAction="#handleHomeButton" text="Home" textFill="#185296">
+         <font>
+            <Font name="Segoe UI Semibold" size="18.0" />
+         </font>
+      </Button>
+       <Label layoutX="492.0" layoutY="25.0" text="Customers">
+           <font>
+               <Font name="Segoe UI Semibold" size="18.0" />
+           </font>
+       </Label>
+   </children>
+</AnchorPane>

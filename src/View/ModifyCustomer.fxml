@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="600.0" maxWidth="1200.0" minHeight="600.0" minWidth="1200.0" opacity="0.8" prefHeight="600.0" prefWidth="1200.0" styleClass="bodybg" stylesheets="@../Utils/BackgroundMain.CSS" xmlns="http://javafx.com/javafx/1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ModifyCustomer">
+    <children>
+        <Label layoutX="748.0" layoutY="65.0" text="Name" textFill="#185296">
+            <font>
+                <Font name="Segoe UI Semibold" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="736.0" layoutY="133.0" text="Country" textFill="#185296">
+            <font>
+                <Font name="Segoe UI Semibold" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="739.0" layoutY="300.0" text="Address" textFill="#185296">
+            <font>
+                <Font name="Segoe UI Semibold" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="735.0" layoutY="369.0" text="Postal Code" textFill="#185296">
+            <font>
+                <Font name="Segoe UI Semibold" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="722.0" layoutY="430.0" text="Phone Number" textFill="#185296">
+            <font>
+                <Font name="Segoe UI Semibold" size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="modifyNameTextField" blendMode="DARKEN" layoutX="858.0" layoutY="69.0" prefHeight="30.0" prefWidth="240.0">
+            <font>
+                <Font name="Segoe UI Semibold" size="14.0" />
+            </font>
+            <opaqueInsets>
+                <Insets bottom="0.8" left="0.8" right="0.8" top="0.8" />
+            </opaqueInsets>
+            <padding>
+                <Insets bottom="0.1" left="0.1" right="0.1" top="0.1" />
+            </padding></TextField>
+        <TextField fx:id="modifyAddressTextField" blendMode="DARKEN" layoutX="863.0" layoutY="300.0" maxHeight="30.0" maxWidth="300.0" minHeight="30.0" minWidth="300.0" prefHeight="30.0" prefWidth="300.0">
+            <font>
+                <Font name="Segoe UI Semibold" size="14.0" />
+            </font>
+            <opaqueInsets>
+                <Insets bottom="0.8" left="0.8" right="0.8" top="0.8" />
+            </opaqueInsets>
+            <padding>
+                <Insets bottom="0.1" left="0.1" right="0.1" top="0.1" />
+            </padding>
+        </TextField>
+        <TextField fx:id="modifyPostalTextField" blendMode="DARKEN" layoutX="860.0" layoutY="366.0" prefHeight="30.0" prefWidth="240.0">
+            <font>
+                <Font name="Segoe UI Semibold" size="14.0" />
+            </font>
+            <opaqueInsets>
+                <Insets bottom="0.8" left="0.8" right="0.8" top="0.8" />
+            </opaqueInsets>
+            <padding>
+                <Insets bottom="0.1" left="0.1" right="0.1" top="0.1" />
+            </padding>
+        </TextField>
+        <TextField fx:id="modifyPhoneTextField" blendMode="DARKEN" layoutX="858.0" layoutY="427.0" prefHeight="30.0" prefWidth="240.0" promptText="123-456-7890">
+            <font>
+                <Font name="Segoe UI Semibold" size="14.0" />
+            </font>
+            <opaqueInsets>
+                <Insets bottom="0.8" left="0.8" right="0.8" top="0.8" />
+            </opaqueInsets>
+            <padding>
+                <Insets bottom="0.1" left="0.1" right="0.1" top="0.1" />
+            </padding>
+        </TextField>
+        <Button fx:id="cancelModifyButton" alignment="CENTER" contentDisplay="CENTER" layoutX="880.0" layoutY="520.0" maxHeight="40.0" maxWidth="100.0" minHeight="40.0" minWidth="100.0" mnemonicParsing="false" onAction="#handleCancelButton" prefHeight="40.0" prefWidth="100.0" text="Cancel" textFill="#185296">
+            <font>
+                <Font name="Segoe UI Semibold" size="18.0" />
+            </font>
+        </Button>
+        <Button fx:id="saveButton" alignment="CENTER" contentDisplay="CENTER" layoutX="1030.0" layoutY="520.0" maxHeight="40.0" maxWidth="100.0" minHeight="40.0" minWidth="100.0" mnemonicParsing="false" onAction="#handleSaveButton" prefHeight="40.0" prefWidth="100.0" text="Save" textFill="#185296">
+            <font>
+                <Font name="Segoe UI Semibold" size="18.0" />
+            </font>
+        </Button>
+        <RadioButton fx:id="usaRB" layoutX="863.0" layoutY="133.0" mnemonicParsing="false" onAction="#handleUSASelected" selected="true" text="USA" textFill="#185296">
+            <font>
+                <Font name="Segoe UI Semibold" size="18.0" />
+            </font>
+            <toggleGroup>
+                <ToggleGroup fx:id="divisionGroupRadioButtons" />
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton fx:id="ukRB" layoutX="968.0" layoutY="133.0" mnemonicParsing="false" onAction="#handleUKSelected" text="UK" textFill="#185296" toggleGroup="$divisionGroupRadioButtons">
+            <font>
+                <Font name="Segoe UI Semibold" size="18.0" />
+            </font>
+        </RadioButton>
+        <RadioButton fx:id="canadaRB" layoutX="1049.0" layoutY="133.0" mnemonicParsing="false" onAction="#handleCanadaSelected" text="Canada" textFill="#185296" toggleGroup="$divisionGroupRadioButtons">
+            <font>
+                <Font name="Segoe UI Semibold" size="18.0" />
+            </font>
+        </RadioButton>
+        <Label layoutX="717.0" layoutY="218.0" prefHeight="30.0" prefWidth="134.0" text="State/Division" textFill="#185296">
+            <font>
+                <Font name="Segoe UI Semibold" size="18.0" />
+            </font>
+        </Label>
+        <ComboBox fx:id="divisionComboBox" layoutX="893.0" layoutY="218.0" maxHeight="30.0" maxWidth="200.0" minHeight="30.0" minWidth="200.0" prefHeight="20.0" prefWidth="200.0" />
+      <TextField fx:id="customerIdTextField" disable="true" layoutX="816.0" layoutY="17.0" prefHeight="30.0" prefWidth="70.0" />
+      <Label layoutX="748.0" layoutY="20.0" text="ID" textFill="#185296">
+         <font>
+            <Font name="Segoe UI Semibold" size="18.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

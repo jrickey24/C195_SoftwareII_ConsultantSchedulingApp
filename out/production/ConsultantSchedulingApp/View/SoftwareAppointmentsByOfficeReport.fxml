@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="600.0" maxWidth="1200.0" minHeight="600.0" minWidth="1200.0" opacity="0.8" prefHeight="600.0" prefWidth="1200.0" styleClass="bodybg" stylesheets="@../Utils/BackgroundMain.CSS" xmlns="http://javafx.com/javafx/1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SoftwareAppointmentsByOfficeReport">
+   <children>
+      <PieChart fx:id="softwareOfficeAptsPieChart" layoutX="622.0" layoutY="41.0" prefHeight="536.0" prefWidth="563.0" />
+      <Button layoutX="1107.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleHomeButton" text="Home" textFill="#185296">
+         <font>
+            <Font name="Segoe UI Semibold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="689.0" layoutY="15.0" text="Software Appointments By Office Location" textFill="#185296" underline="true">
+         <font>
+            <Font name="Segoe UI Semibold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="phoenixTextField" layoutX="362.0" layoutY="102.0" prefHeight="35.0" prefWidth="92.0">
+         <font>
+            <Font name="Segoe UI Semibold" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="whiteplainsTextField" layoutX="362.0" layoutY="187.0" prefHeight="24.0" prefWidth="92.0">
+         <font>
+            <Font name="Segoe UI Semibold" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="montrealTextField" layoutX="357.0" layoutY="267.0" prefHeight="24.0" prefWidth="92.0">
+         <font>
+            <Font name="Segoe UI Semibold" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="londonTextField" layoutX="357.0" layoutY="330.0" prefHeight="24.0" prefWidth="92.0">
+         <font>
+            <Font name="Segoe UI Semibold" size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="258.0" layoutY="108.0" prefHeight="24.0" prefWidth="92.0" text="Phoenix" textFill="#185296" underline="true">
+         <font>
+            <Font name="Segoe UI Semibold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="237.0" layoutY="187.0" prefHeight="24.0" prefWidth="106.0" text="White Plains" textFill="#185296" underline="true">
+         <font>
+            <Font name="Segoe UI Semibold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="251.0" layoutY="267.0" prefHeight="24.0" prefWidth="106.0" text="Montreal" textFill="#185296" underline="true">
+         <font>
+            <Font name="Segoe UI Semibold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="251.0" layoutY="330.0" prefHeight="24.0" prefWidth="106.0" text="London" textFill="#185296" underline="true">
+         <font>
+            <Font name="Segoe UI Semibold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

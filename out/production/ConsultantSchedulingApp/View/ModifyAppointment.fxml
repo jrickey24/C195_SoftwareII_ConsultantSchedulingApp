@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="600.0" maxWidth="1200.0" minHeight="600.0" minWidth="1200.0" opacity="0.8" prefHeight="600.0" prefWidth="1200.0" styleClass="bodybg" stylesheets="@../Utils/BackgroundMain.CSS" xmlns="http://javafx.com/javafx/1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ModifyAppointment">
+    <children>
+        <Label layoutX="493.0" layoutY="85.0" text="Title" textFill="#185296">
+            <font>
+                <Font name="Segoe UI Semibold" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="464.0" layoutY="150.0" text="Description" textFill="#185296">
+            <font>
+                <Font name="Segoe UI Semibold" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="475.0" layoutY="218.0" text="Location" textFill="#185296">
+            <font>
+                <Font name="Segoe UI Semibold" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="491.0" layoutY="275.0" text="Type" textFill="#185296">
+            <font>
+                <Font name="Segoe UI Semibold" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="498.0" layoutY="349.0" text="Start Time" textFill="#185296">
+            <font>
+                <Font name="Segoe UI Semibold" size="18.0" />
+            </font>
+        </Label>
+        <Button fx:id="cancelModifyButton" alignment="CENTER" contentDisplay="CENTER" layoutX="880.0" layoutY="520.0" maxHeight="40.0" maxWidth="100.0" minHeight="40.0" minWidth="100.0" mnemonicParsing="false" onAction="#handleCancelButton" prefHeight="40.0" prefWidth="100.0" text="Cancel" textFill="#185296">
+            <font>
+                <Font name="Segoe UI Semibold" size="18.0" />
+            </font>
+        </Button>
+        <Button fx:id="saveButton" alignment="CENTER" contentDisplay="CENTER" layoutX="1030.0" layoutY="520.0" maxHeight="40.0" maxWidth="100.0" minHeight="40.0" minWidth="100.0" mnemonicParsing="false" onAction="#handleSaveButton" prefHeight="40.0" prefWidth="100.0" text="Save" textFill="#185296">
+            <font>
+                <Font name="Segoe UI Semibold" size="18.0" />
+            </font>
+        </Button>
+      <Label layoutX="452.0" layoutY="24.0" text="Appointment ID" textFill="#185296">
+         <font>
+            <Font name="Segoe UI Semibold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="appointmentIdTextField" disable="true" layoutX="600.0" layoutY="21.0" prefHeight="30.0" prefWidth="70.0" />
+      <ComboBox fx:id="modifyTitleComboBox" layoutX="564.0" layoutY="84.0" prefHeight="30.0" prefWidth="226.0" />
+      <ComboBox fx:id="modifyDescriptionComboBox" layoutX="564.0" layoutY="147.0" prefHeight="30.0" prefWidth="247.0" />
+      <ComboBox fx:id="modifyLocationComboBox" layoutX="564.0" layoutY="218.0" prefHeight="30.0" prefWidth="201.0" />
+      <ComboBox fx:id="modifyTypeComboBox" layoutX="558.0" layoutY="272.0" prefHeight="30.0" prefWidth="253.0" />
+      <DatePicker fx:id="datePicker" layoutX="964.0" layoutY="94.0" />
+      <Label layoutX="866.0" layoutY="90.0" text="Date" textFill="#185296">
+         <font>
+            <Font name="Segoe UI Semibold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="867.0" layoutY="219.0" text="Contact" textFill="#185296">
+         <font>
+            <Font name="Segoe UI Semibold" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="modifyContactComboBox" layoutX="955.0" layoutY="218.0" prefHeight="30.0" prefWidth="202.0" />
+      <ComboBox fx:id="modifyStartTimeComboBox" layoutX="603.0" layoutY="346.0" prefHeight="30.0" prefWidth="133.0" />
+      <Label layoutX="856.0" layoutY="361.0" text="End Time" textFill="#185296">
+         <font>
+            <Font name="Segoe UI Semibold" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="modifyEndTimeComboBox" layoutX="963.0" layoutY="358.0" prefHeight="30.0" prefWidth="133.0" />
+      <Label layoutX="829.0" layoutY="24.0" text="Customer ID" textFill="#185296">
+         <font>
+            <Font name="Segoe UI Semibold" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="modifyCustomerIdComboBox" layoutX="972.0" layoutY="21.0" prefHeight="30.0" prefWidth="133.0" />
+      <Label layoutX="874.0" layoutY="275.0" text="User ID" textFill="#185296">
+         <font>
+            <Font name="Segoe UI Semibold" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="modifyUserIdComboBox" layoutX="989.0" layoutY="272.0" prefHeight="30.0" prefWidth="133.0" />
+    </children>
+</AnchorPane>
